@@ -8,9 +8,7 @@ import Product from './product'
 
   const Gallery2sales = () => {
     return (
-        <div style={{
-            padding: '2rem 4rem 3rem 4rem',
-        }}>
+        <div>
             {/**<div style={{
                 margin: '4rem 2rem',
                 padding: '2rem 4rem',
