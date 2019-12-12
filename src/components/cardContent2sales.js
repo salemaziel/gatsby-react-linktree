@@ -27,10 +27,10 @@ function Cardcontent2sales() {
                   textTransform: 'uppercase',
                   display: 'relative',
               }}>
-                  IG Bio Link Tree (Think Of better name) 
+                  Shop
                   </h1> 
             </CardTitle>
-            <CardSubtitle>Just a test: Subtitle</CardSubtitle>
+            {/**<CardSubtitle>Just a test: Subtitle</CardSubtitle>**/}
            
             
           

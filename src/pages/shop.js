@@ -19,13 +19,14 @@ import Layout2sales from '../components/Layout2sales';
 
 const Index = () => (
         <div className='Wrapper'>
-           <Card className="card-bg">
+           {/**<Card className="card-bg">
                 <CardTitle>Title</CardTitle>
                 <CardBody>
                     <Circulardropdown />
                     <CardText>Text text text et etc etc</CardText>
                 </CardBody>
-           </Card>
+              </Card>**/}
+              <Layout2sales />
         </div>
 )
 
