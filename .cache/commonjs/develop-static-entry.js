@@ -13,6 +13,8 @@ var _lodash = require("lodash");
 
 var _apiRunnerSsr = _interopRequireDefault(require("./api-runner-ssr"));
 
+var _jsxFileName = "/Users/kastens/Sites/gatsby/packages/gatsby/cache-dir/develop-static-entry.js";
+
 // import testRequireError from "./test-require-error"
 // For some extremely mysterious reason, webpack adds the above module *after*
 // this module so that when this code runs, testRequireError is undefined.
@@ -42,7 +44,12 @@ var _default = (pagePath, callback) => {
   let headComponents = [_react.default.createElement("meta", {
     key: "environment",
     name: "note",
-    content: "environment=development"
+    content: "environment=development",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: void 0
   })];
   let htmlAttributes = {};
   let bodyAttributes = {};
@@ -112,20 +119,30 @@ var _default = (pagePath, callback) => {
     pathname: pagePath
   });
 
-  const htmlElement = _react.default.createElement(Html, Object.assign({}, bodyProps, {
+  const htmlElement = _react.default.createElement(Html, { ...bodyProps,
     body: ``,
     headComponents: headComponents.concat([_react.default.createElement("script", {
       key: `io`,
-      src: "/socket.io/socket.io.js"
+      src: "/socket.io/socket.io.js",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106
+      },
+      __self: void 0
     })]),
     htmlAttributes,
     bodyAttributes,
     preBodyComponents,
     postBodyComponents: postBodyComponents.concat([_react.default.createElement("script", {
       key: `commons`,
-      src: "/commons.js"
+      src: "/commons.js",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 112
+      },
+      __self: void 0
     })])
-  }));
+  });
 
   htmlStr = (0, _server.renderToStaticMarkup)(htmlElement);
   htmlStr = `<!DOCTYPE html>${htmlStr}`;

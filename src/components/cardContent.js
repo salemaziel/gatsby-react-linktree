@@ -76,13 +76,15 @@ function cardContent() {
            
             <CardText>
                 <div style={{
-                    display: 'flex',
+                    display: 'grid',
                     justifyContent: 'center',
                     alignContent: 'center',
                     textAlign: 'center',
                 }}>
               {/**<Button primary prefetch href="/gallery">Gallery display</Button>**/}
               <Button primary prefetch href="https://behance.net/codestaff-salem">Portfolio on Behance</Button>
+              
+              <Button primary prefetch href="http://localhost:80/index.php?provider=3">Book Consultation</Button>
               </div>
                     {/**<div className='items'>
                         <div className='items-head'>

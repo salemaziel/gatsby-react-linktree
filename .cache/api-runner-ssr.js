@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/home/pc/testing-code/react-linktree-gatsbytest/react-linktree/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/home/salem/Public/gatsby-react-linktree/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/pc/testing-code/react-linktree-gatsbytest/react-linktree/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      plugin: require('/home/salem/Public/gatsby-react-linktree/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     },{
-      plugin: require('/home/pc/testing-code/react-linktree-gatsbytest/react-linktree/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/home/salem/Public/gatsby-react-linktree/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"YOUR_GOOGLE_ANALYTICS_TRACKING_ID","head":false,"anonymize":true,"respectDNT":true,"exclude":["/preview/**","/do-not-track/me/too/"],"pageTransitionDelay":0,"optimizeId":"YOUR_GOOGLE_OPTIMIZE_TRACKING_ID","experimentId":"YOUR_GOOGLE_EXPERIMENT_ID","variationId":"YOUR_GOOGLE_OPTIMIZE_VARIATION_ID","sampleRate":5,"siteSpeedSampleRate":10,"cookieDomain":"example.com"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

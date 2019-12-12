@@ -1,7 +1,7 @@
 
 .photo {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     justify-self: center;
     border-radius: 50%;
     display: inline-block;
@@ -11,7 +11,7 @@
 .userphoto {
     display: inline-block;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: .5rem;
     color: #ffffff;
     font-size: .8em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

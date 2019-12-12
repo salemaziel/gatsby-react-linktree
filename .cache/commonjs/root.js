@@ -25,6 +25,8 @@ var _ensureResources = _interopRequireDefault(require("./ensure-resources"));
 
 var _errorOverlayHandler = require("./error-overlay-handler");
 
+var _jsxFileName = "/Users/kastens/Sites/gatsby/packages/gatsby/cache-dir/root.js";
+
 if (window.__webpack_hot_middleware_reporter__ !== undefined) {
   const overlayErrorID = `webpack`; // Report build errors
 
@@ -58,8 +60,19 @@ const RouteHandler = props => _react.default.createElement(_router.BaseContext.P
   value: {
     baseuri: `/`,
     basepath: `/`
-  }
-}, _react.default.createElement(_jsonStore.default, props));
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 45
+  },
+  __self: void 0
+}, _react.default.createElement(_jsonStore.default, (0, _extends2.default)({}, props, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 51
+  },
+  __self: void 0
+})));
 
 class LocationHandler extends _react.default.Component {
   render() {
@@ -69,19 +82,45 @@ class LocationHandler extends _react.default.Component {
 
     if (!_loader.default.isPageNotFound(location.pathname)) {
       return _react.default.createElement(_ensureResources.default, {
-        location: location
+        location: location,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
       }, locationAndPageResources => _react.default.createElement(_navigation.RouteUpdates, {
-        location: location
+        location: location,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
       }, _react.default.createElement(_gatsbyReactRouterScroll.ScrollContext, {
         location: location,
-        shouldUpdateScroll: _navigation.shouldUpdateScroll
+        shouldUpdateScroll: _navigation.shouldUpdateScroll,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
       }, _react.default.createElement(_router.Router, {
         basepath: __BASE_PATH__,
         location: location,
-        id: "gatsby-focus-wrapper"
+        id: "gatsby-focus-wrapper",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
       }, _react.default.createElement(RouteHandler, (0, _extends2.default)({
         path: encodeURI(locationAndPageResources.pageResources.page.matchPath || locationAndPageResources.pageResources.page.path)
-      }, this.props, locationAndPageResources))))));
+      }, this.props, locationAndPageResources, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }))))));
     }
 
     const dev404PageResources = _loader.default.loadPageSync(`/dev-404-page`);
@@ -92,32 +131,76 @@ class LocationHandler extends _react.default.Component {
 
     if (real404PageResources) {
       custom404 = _react.default.createElement(_jsonStore.default, (0, _extends2.default)({}, this.props, {
-        pageResources: real404PageResources
+        pageResources: real404PageResources,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94
+        },
+        __self: this
       }));
     }
 
     return _react.default.createElement(_navigation.RouteUpdates, {
-      location: location
+      location: location,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 99
+      },
+      __self: this
     }, _react.default.createElement(_router.Router, {
       basepath: __BASE_PATH__,
       location: location,
-      id: "gatsby-focus-wrapper"
+      id: "gatsby-focus-wrapper",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100
+      },
+      __self: this
     }, _react.default.createElement(RouteHandler, {
       path: location.pathname,
       location: location,
       pageResources: dev404PageResources,
-      custom404: custom404
+      custom404: custom404,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105
+      },
+      __self: this
     })));
   }
 
 }
 
-const Root = () => _react.default.createElement(_router.Location, null, locationContext => _react.default.createElement(LocationHandler, locationContext)); // Let site, plugins wrap the site e.g. for Redux.
+const Root = () => _react.default.createElement(_router.Location, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 118
+  },
+  __self: void 0
+}, locationContext => _react.default.createElement(LocationHandler, (0, _extends2.default)({}, locationContext, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 119
+  },
+  __self: void 0
+}))); // Let site, plugins wrap the site e.g. for Redux.
 
 
 const WrappedRoot = (0, _apiRunnerBrowser.apiRunner)(`wrapRootElement`, {
-  element: _react.default.createElement(Root, null)
-}, _react.default.createElement(Root, null), ({
+  element: _react.default.createElement(Root, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: void 0
+  })
+}, _react.default.createElement(Root, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 127
+  },
+  __self: void 0
+}), ({
   result,
   plugin
 }) => {

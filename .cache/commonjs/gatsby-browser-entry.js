@@ -1,8 +1,8 @@
 "use strict";
 
-var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
-
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
 
 exports.__esModule = true;
 exports.graphql = graphql;
@@ -29,6 +29,7 @@ exports.PageRenderer = _publicPageRenderer.default;
 
 var _loader = _interopRequireDefault(require("./loader"));
 
+var _jsxFileName = "/Users/kastens/Sites/gatsby/packages/gatsby/cache-dir/gatsby-browser-entry.js";
 const prefetchPathname = _loader.default.enqueue;
 exports.prefetchPathname = prefetchPathname;
 
@@ -43,7 +44,19 @@ function StaticQueryDataRenderer({
   render
 }) {
   const finalData = data ? data.data : staticQueryData[query] && staticQueryData[query].data;
-  return _react.default.createElement(_react.default.Fragment, null, finalData && render(finalData), !finalData && _react.default.createElement("div", null, "Loading (StaticQuery)"));
+  return _react.default.createElement(_react.default.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, finalData && render(finalData), !finalData && _react.default.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "Loading (StaticQuery)"));
 }
 
 const StaticQuery = props => {
@@ -53,11 +66,22 @@ const StaticQuery = props => {
     render,
     children
   } = props;
-  return _react.default.createElement(StaticQueryContext.Consumer, null, staticQueryData => _react.default.createElement(StaticQueryDataRenderer, {
+  return _react.default.createElement(StaticQueryContext.Consumer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: void 0
+  }, staticQueryData => _react.default.createElement(StaticQueryDataRenderer, {
     data: data,
     query: query,
     render: render || children,
-    staticQueryData: staticQueryData
+    staticQueryData: staticQueryData,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: void 0
   }));
 };
 
